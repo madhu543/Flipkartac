@@ -1,0 +1,30 @@
+Login to VM in Devstream
+
+URL: https://evgit2/
+to configure the user name and email: git config --global user name "Madhu@543"
+ git config --global user name "madhukirantanguturi@gmail.com"
+--------------------
+1. git clone https://evgit2.ad.infosys.com/finacle-core/loans.git
+2. cd loans
+3. Create new branch-->  git branch loans-1011804 and cd loans-1011804 OR git checkout -b loans-1011804
+4. git status --> to check on which branch we are currently working on
+5. Go to the exe where you want to modify the file.
+6. Copy file from VM to branch
+7. git status --> to see Status
+8. git add -A ---> To move file from WD to Staging Area
+9. To unstage ----> git reset --fileName
+10. Staging Area to Local Repos--> git commit -m 'wi TaskId Comments'
+11. git diff HEAD^1 HEAD ---> To see changes between last two commits
+12. git push --set-upstream origin loans-1011804 ----> To Push
+13. git reset --soft cid (local to staging)
+14. git reset HEAD file-name(staging to workspace)
+15. git reset --mixed cid (local to workspace)
+
+16. git commit -m "lable" file (Workspace to local *only modified files)
+
+git clone -b 11.9-base https://evgit2.ad.infosys.com/finacle-core/common-misc.git
+git clone -b 11.10-base https://evgit2.ad.infosys.com/finacle-core/common-misc.git
+
+git clone -b 11.9-base https://evgit2.ad.infosys.com/finacle-core/loans.git
+git clone -b 11.10-base https://evgit2.ad.infosys.com/finacle-core/loans.git
+git clone -b 11.11-base https://evgit2.ad.infosys.com/finacle-core/loans.git
